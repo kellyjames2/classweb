@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title></title>
+        <style type="text/css">
+            @keyframes myAnimation1 {
+                0% {
+                    font-size: normal;
+                }
+                50% {
+                    font-size: larger;
+                }
+                100% {
+                    font-size: normal;
+                }
+            }
+            @keyframes myAnimation2 {
+                0% {
+                    position: relative;
+                    font-size: 0px;
+                }
+                100% {
+                    position:relative;
+                    font-size: normal;
+                }
+            }
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'poppins', sans-serif;
+            }
+            section {
+                position: relative;
+                max-width: 550px;
+                background-color: transparent;
+                border: 2px solid rgba(255, 255, 255, 0.5);
+                border-radius: 20px;
+                backdrop-filter: blur(50px);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 2rem 3rem;
+                animation-name: myAnimation2;
+                animation-iteration-count: 1;
+                animation-duration: 3s;
+                animation-direction: normal;
+                animation-delay: 0.5s;
+            }
+            .inputbox input {
+                width: 100%;
+                height: 60px;
+                text-align: center;
+                border-radius: 60px;
+                background: transparent;
+                border: none;
+                outline: none;
+                font-size: 1rem;
+                padding: 0 35px 0 5px;
+                color: #000000;
+                transition: all 0.4s ease;
+                animation-name: myAnimation2;
+                animation-iteration-count: 1;
+                animation-duration: 3s;
+                animation-direction: normal;
+                animation-delay: 0.5s;
+            }
+            .inputbox input:hover {
+                background-color: rgb(255, 255, 255, 0.5);
+            }
+            h1 {
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                text-align: center;
+            }
+            input {
+                width: 100%;
+                padding: 10px;
+                margin: 10px 0;
+                border: 1px solid #000000;
+                border-radius: 4px;
+                font-size: 16px;
+            }
+            button {
+                width: 100%;
+                height: 40px;
+                border-radius: 40px;
+                background-color: transparent;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                font-size: 1rem;
+                font-weight: 600;
+                transition: all 0.4s ease;
+                backdrop-filter: blur(10px);
+                animation-name: myAnimation2;
+                animation-iteration-count: 1;
+                animation-duration: 3s;
+                animation-direction: normal;
+                animation-delay: 0.5s;
+            }
+            button:hover {
+                background-color: rgb(255, 255, 255, 0.5);
+                animation-name: myAnimation1;
+                animation-iteration-count: infinite;
+                animation-duration: 2s;
+                animation-direction: normal;
+                transition: all 0.4s ease-in-out;
+            }
+            body {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-height: 100vh;
+                background-image: url("maxresdefault.jpg");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+            /*.inputbox img {
+                
+                opacity: 0.5;
+                align-self: center;
+                border-style: dotted;
+                border-radius: 40px;
+                border: 2px solid rgb(255, 255, 255, 0.5);
+            }*/
+            .inputbox marquee {
+                color: red;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+        <div class="inputbox", content="width: device-width; initial-scale: 1.0">
+            <!--<img src="profilepic.png" alt="">-->
+            <h1>Type in your Index Number to Login</h1>
+            <input type="text" id="indnum", name="indnum", placeholder="Enter your index number here..." required>
+            <a href="homepage.html"><button type="submit", id="submit", onclick="checkInput()"> Submit </button></a>
+            <marquee behavior="" direction="left">You can enter in either small case or caps</marquee>
+            <!--<P id="hidden">* Tbis Index Number is not recognized in the class</P> -->
+        </div>
+        </section>
+        <script src="script.js"></script>
+    </body>
+</html>

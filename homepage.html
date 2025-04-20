@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Diploma CSS Website (D100)</title>
+    <style>
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            width: 100%;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+            font-style: italic;
+            font-stretch: expanded;
+        }
+        .main-content {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .category {
+            background-color: white;
+            border-radius: 8px;
+            width: 30%;
+            box-shadow: 0 0 70px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+        .category img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .category .title {
+            font-size: 22px;
+            color: #2d8e42;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .category button {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: all 0.4s ease-in-out;
+            
+        }
+        .category button:hover {
+            background-color: #555;
+            font-size: larger;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to The Diploma CSS Level 100 Class</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="https://wa.me/+233555442763">Connect With Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <div class="main-content">
+        <div class="category">
+            <img src="slidesicon2.png" alt="slides">
+            <a href="slidespage.html"><button>Slides</button></a>
+        </div>
+        <div class="category">
+            <img src="assignmentsicon.png" alt="assignments">
+            <button>Assignments</button>
+        </div>
+        <div class="category">
+            <img src="timetableicon.jpg" alt="timetable">
+            <button>TimeTable</button>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; This is a copyrighted website for Diploma Computer Science 2025 Batch</p>
+    </footer>
+
+</body>
+</html>
